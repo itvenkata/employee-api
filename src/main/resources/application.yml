@@ -1,0 +1,16 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /api/employee
+
+spring:
+  application:
+    name: "Employee Information"
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+management:
+  endpoint:
+    health:
+      enabled: true
