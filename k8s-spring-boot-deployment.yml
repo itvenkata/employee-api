@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: chthota/employee-api:employee-api
+          image: chthota/employee-api
           resources:
             requests:
               memory: "128Mi"
@@ -25,7 +25,6 @@ spec:
 
           ports:
             - containerPort: 8090
-
           readinessProbe:
             httpGet:
               path: /api/employee/actuator/health
