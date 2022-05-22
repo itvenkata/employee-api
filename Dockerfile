@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim-buster
+FROM adoptopenjdk/openjdk11:latest
 MAINTAINER chthota
 EXPOSE 8090:8090
 COPY target/employee-api-0.0.1-SNAPSHOT.jar employee-api.jar
