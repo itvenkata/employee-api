@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: chthota/employee-api
+          image: chthota/employee-api:employee-api
           resources:
             requests:
               memory: "128Mi"
