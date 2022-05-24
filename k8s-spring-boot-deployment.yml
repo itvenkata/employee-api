@@ -25,26 +25,6 @@ spec:
 
           ports:
             - containerPort: 8090
-          readinessProbe:
-            httpGet:
-              path: /api/employee/actuator/health
-              port: 8090
-            initialDelaySeconds: 15
-            periodSeconds: 10
-
-          livenessProbe:
-            httpGet:
-              path: /api/employee/actuator/health
-              port: 8090
-            initialDelaySeconds: 15
-            periodSeconds: 10
-
-          startupProbe:
-            httpGet:
-              path: /api/employee/actuator/health
-              port: 8090
-            failureThreshold: 30
-            periodSeconds: 10
 
           env:
             - name: PORT
